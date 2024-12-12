@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    transform: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+}
+h1{
+    font-size: 60px;
+    color: #C4A484;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #e6e6e6, #fff);
+    box-shadow: 8px 8px 16px #d1d1d1,
+                -8px -8px 16px #fff;
+    cursor: pointer;
+}
+.box:hover{
+    background: linear-gradient(145deg, #C4A484, #C4A484);
+    box-shadow: 8px 8px 16px #d1d1d1,
+                -8px -8px 16px #fff;
+}
+.icons{
+    font-size: 50px;
+    color: #C4A484;
+    margin-top: 10px;
+}
+.box:hover .icons{
+    margin-top: 0px;
+    color: #fff;
+}
+.box h2{
+    font-weight: 500;
+    margin-top: 25px;
+}
+.box:hover h2{
+    color: #fff;
+}
+.box p{
+    color: grey;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.box:hover p{
+    color: #fff;
+}
+.arrow{
+    font-size: 30px;
+    color: #C4A484;
+    margin-top: 40px;
+    display: none;
+}
+.box:hover .arrow{
+    color: #fff;
+    margin-top: 30px;
+    display: block;
+}
+.header {
+    width: 100%;
+    background-color: #191919;
+    color: #C0C0C0;
+    padding: 10px 0; /* Reduce vertical padding */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header .container {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1 {
+    font-size: 24px; 
+    margin: 0; 
+}
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.header .nav-links li {
+    display: inline;
+}
+.header .nav-links a {
+    text-decoration: none;
+    color: #C0C0C0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.header .nav-links a:hover {
+    color: #964B00;
+}
